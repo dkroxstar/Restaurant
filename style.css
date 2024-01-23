@@ -1,0 +1,414 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    color: #020d19;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    /* #ffc054 */
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 250px 1fr 300px;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Menu design */
+
+#menu{
+    background-color: rgb(244, 250, 255);
+    filter: drop-shadow(0 0 0.40rem rgba(212, 212, 212, 0.929));
+    /* background-color: #ffc054; */
+}
+
+.brand-logo{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+.brand-logo img{
+    width: 80px;
+    height: 80px;
+    margin: 10px 0px;
+}
+
+.menu-item a{
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    padding: 8px 30px;
+    margin: 12px 0px;
+}
+
+.menu-item a:hover{
+    background-color: #ffc0542e;
+}
+
+#food-container{
+    /* background-color: #ffc054; */
+    background-color: rgb(244, 250, 255);
+    overflow: scroll;
+    overflow-x: hidden;
+    box-sizing: content-box;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255,0.3);
+    z-index: 1;
+    backdrop-filter: blur(5px);
+    /* width: 95%; */
+    margin: auto;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.a1{
+    text-decoration: none;
+    background-color: #ffc054;
+    padding: 5px 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+    margin: 0px 5px;
+}
+
+.a1 i{
+    margin: 0px 8px 0px 0px;
+}
+
+.a1 span{
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 400;
+}
+
+.a1:active{
+    background-color: #ffc05400;
+    border: 1px solid #ffc054;
+}
+
+#biryani,#chicken,#paneer,#chinese,#vegetable,#south-indian{
+    margin: 40px 0px 0px 30px;
+    width: 95%;
+}
+
+#paneer,#chinese .category-name{
+    color: #020d19;
+}
+
+#paneer #item-card,#vegetable #item-card{
+    background: #ffffff;
+    /* background-color: rgb(244, 250, 255); */
+
+}
+
+/* #chinese #item-card,#south-indian #item-card{
+    background: #ffc054;
+} */
+
+#category-name,#item-menu{
+    margin: 10px 10px 0px 20px;
+    font-size: 35px;
+    color: #ffc054;
+    font-weight: 500;
+}
+
+
+#item-card{
+    width: 180px;
+    height: 250px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    background: #ffc054;
+    cursor: pointer;
+    transition: 0.1s all ease-in-out;
+    filter: drop-shadow(0 0 0.40rem rgba(212, 212, 212, 0.929));
+    scale: 0.9;
+}
+
+#card-top{
+    display: flex;
+    margin: 0px 9px;
+    justify-content: space-between;
+
+}
+
+.blk{
+    color: #020d19 !important;
+}
+
+.rating{
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 10px;
+    background-color: #020d19;
+}
+
+.rating i{
+    color: #ffc054;
+}
+
+.rating span{
+    margin: 0px 0px 0px 5px;
+    font-size: 10px;
+    font-weight: 600;
+    color: #ffc054;
+}
+
+#item-card img{
+    width: 95%;
+    /* height: 120px; */
+    border-radius: 10px;
+    margin: 5px auto;
+    display: block;
+    transition: 0.3s ease-in-out;
+}
+
+#item-card:hover{
+    transition: 0.3s all ease-in-out;
+    transform: scale(1.05);
+}
+
+#item-name{
+    font-size: 14px;
+    margin: 10px 0px 0px 5px;
+    font-weight: 700;
+}
+
+#item-price{
+    font-size: 14px;
+    margin: 0px 0px 0px 5px;
+    font-weight: 500;
+}
+
+#cart{
+    background-color: #ffc054;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.taste-header{
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    /* background: rgba(255, 255, 255,0.3);
+    backdrop-filter: blur(5px); */
+}
+
+.fa-user{
+    color: #ffc054;
+}
+
+.fa-heart{
+    padding-top: 4px;
+}
+
+.red{
+    color: rgb(255, 52, 52);
+}
+
+.account{
+    background-color: #000000;
+    text-decoration: none;
+}
+
+.account:active{
+    background: none;
+    color: black;
+    border:1px solid #020d19;
+}
+
+.account:active span, .account:active i{
+    color: black;
+}
+
+.account span{
+    color: #ffc054;
+}
+
+.list-card a{
+    text-decoration: none;
+}
+
+.item-menu{
+    margin: 40px 10px 0px 20px;
+    font-size: 35px;
+    color: #020d19;
+    font-weight: 500;
+}
+
+.border{
+    background-color: #020d19;
+    width: 80px;
+    height: 3px;
+    margin: 3px 10px 0px 20px;
+    border-radius: 2px;
+}
+
+.list-card{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 20px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+ 
+.list-card img{
+    width: 20%;
+    border-radius: 10px;
+    display: block;
+    transition: 0.3s ease-in-out;
+}
+
+.list-card a{
+    margin: 0px 0px 0px 15px;
+}
+
+.list-name{
+    color: #020d19;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.food-items{
+    display: none;
+}
+/*
+#category-list{
+    display: none;
+} */
+
+.cart-toggle{
+    display: none;
+}
+
+#cart-page{
+    background: #ffc054;
+    margin: 40px 20px;
+    position: relative;
+    border-radius: 10px;
+}
+
+#card-title{
+    font-size: 25px;
+    font-weight: 500;
+    color: #020d19;
+    margin: 0px 10px;
+    padding-top: 20px;
+    /* margin-top: 30px; */
+}
+
+#cart-page table{
+    width: 100%;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+#cart-page table thead td{
+    font-size: 15px;
+    font-weight: 500;
+    /* padding: 0px 0px 0px 10px; */
+}
+
+.card-item-name{
+    font-size: 15px !important;
+    font-weight: 500;
+}
+
+#m-total-amount{
+    display: none;
+}
+
+#cart-page table tbody td{
+    padding: 10px 0px;
+    font-size: 20px;
+}
+
+#cart-page table tbody button{
+    outline: none;
+    border: none;
+    font-size: 16px;
+    background: none;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0px 5px;
+    padding: 3px 8px;
+}
+
+#cart-page table tbody img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#checkout{
+    text-align: center;
+    margin: 40px 20px;
+    border-radius: 5px;
+    background: #ffffff;
+    padding: 10px 20px;
+}
+
+#checkout p{
+    margin: 15px 0px;
+    text-align: left;
+}
+
+#total-price,#total-item{
+    font-size: 15px;
+    color: #020d19;
+    font-weight: 600;
+}
+
+.cart-btn{
+    outline: none;
+    border: none;
+    font-size: 14px;
+    background: none;
+    background-color: #000000;
+    color: #ffc054;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 5px 5px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+
+.cart-btn:active{
+    color: #020d19;
+    background: none;
+    border: 1px solid #020d19;
+}
+
+#delivery{
+    font-size: 10px;
+    font-weight: 400;
+    color: limegreen;
+}
